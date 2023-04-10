@@ -49,6 +49,6 @@ The model is built backwards where we start off with including all the variables
 
 - Lastly I run a prediction accuracy on the model.
 ### **Conclusion**
-I had a fun time doing this project, putting my `Machine  Learning` and `Business Analysis` skilss to use. I'm so greatful that I've seen it to conclusion and hope many of you out there find it useful and educative.
+I had a fun time doing this project, putting my `Machine  Learning` and `Business Analysis` skils to use. I'm so greatful that I've seen it to conclusion and hope many of you out there find it useful and educative.
 
 `Thank you all!`

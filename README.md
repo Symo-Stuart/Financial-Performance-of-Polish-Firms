@@ -1,10 +1,10 @@
 # **Financial-Performance-of-Polish-Firms**
-This project will be looking at building a Machine Learning Linear Regression Model to predict whether a given polish firm is headed for bankruptcy or not
+This project looks at building a Machine Learning Linear Regression Model to predict Bankruptdcy for Polish Firms
 ## **Introduction**
-This project intends to build a regression model to predict a Polish company's performance using given
-performance criteria. The data used for analysis is a multivariate Polish
-bankruptcy data set collected from 2000 to 2013. It contains 64 attributes labeled X1-X64. The full
-description attached in the image below.
+This project builds a regression model to predict a Polish company's Financial performance using given
+performance financial ratios over a 13 year period. The data used for analysis is a multivariate Polish
+bankruptcy data set collected from 2000 to 2013. It contains 64 attributes labeled X1-X64. The data set and it's full
+description can be downloaded from `http://archive.ics.uci.edu/ml/datasets/polish+companies+bankruptcy+data`
 ## **Topics to be covered include;**
 - `Importing data into R-Studio`
 - `Loading the Required libraries`
@@ -35,6 +35,20 @@ For this Particular Project needs, I'm running the following libraries;
 ### **Data Familiarization**
 This section includes data types checking, data cleaning, and checking for missing values.
 ### **Variable Selection**
-The main criteria for variable selection is checking whether the assumptions for linear regression hold for your variables and for your model. Some of the assumptions can be checked for before model building but others can only apply after the model building and therefore during the `model validation` process.
+`The dependant variable is x1.` For independent variables selection I used the OLS assumptions. Some of the assumptions can be checked for before model building but others can only applied after the model building and therefore during the `model validation` process.
 
 First and foremost I run correlation to check for variables that have a high correlation with the dependant variable (`correlation > 0.5`). Also to check for multicolinearity among the rest of the variables and therefore eliminating those that have high correlations with each other (`correlation > 0.7`) and those with a very low correlation with the dependant variable (`correlation < 0.4`)
+### **Model Building**
+The model is built backwards where we start off with including all the variables selected for the model and go on eliminating variablea that don't align with our criteria until we get the optimal variables for our final model.
+### **Model Validation**
+- In this section I run a check for outliers using the boxplots and decided to get rid of the outliers to stream line the accuracy of our model.
+
+- I run a non-linearity check by randomly checking 2 variables that may have a non-linear relationship with our dependant variable.
+
+- I run a `vif` score on the model to eliminate variables whose `vif > 2`. This is to minimize spikes in the covariances among the variables in the final model.
+
+- Lastly I run a prediction accuracy on the model.
+### **Conclusion**
+I had a fun time doing this project, putting my `Machine  Learning` and `Business Analysis` skilss to use. I'm so greatful that I've seen it to conclusion and hope many of you out there find it useful and educative.
+
+`Thank you all!`

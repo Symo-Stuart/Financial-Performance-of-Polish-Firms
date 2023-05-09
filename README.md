@@ -1,4 +1,4 @@
-# **Financial-Performance-of-Polish-Firms**
+# **Financial_Performance_of_Polish_Firms**
 This project looks at building a Machine Learning Linear Regression Model to predict Bankruptdcy for Polish Firms
 ## **Introduction**
 This project builds a regression model to predict a Polish company's Financial performance using given
